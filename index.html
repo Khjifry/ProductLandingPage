@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80" alt="logo-image" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#header" class="nav-link">Home</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#form" class="nav-link">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="videos">
+        <iframe src="https://www.youtube.com/embed/Bhn58HgyA1k" title="Mixed Cocoa Powder With Marie Biscuit , You'll Be Surprised By The Result !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        <iframe src="https://www.youtube.com/embed/Bhn58HgyA1k" title="Mixed Cocoa Powder With Marie Biscuit , You'll Be Surprised By The Result !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+        <iframe src="https://www.youtube.com/embed/Bhn58HgyA1k" title="Mixed Cocoa Powder With Marie Biscuit , You'll Be Surprised By The Result !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+    </section>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            
+            <div class="input-container">
+                <label for="addvice-&-suggestion">Addvice & Suggestion</label>
+                <textarea id="addvice-and-suggestion" cols="30" rows="10" name="addvice-&-suggestion" required></textarea>
+            </div>
+            <div class="input-container">
+                <input type="email" placeholder="Enter your email" id="email" 
+                name="email"
+                required>
+            </div>
+            <input type="submit" id="submit">
+        </form>
+<script>
+    const textarea = document.querySelector('#addvice-and-suggestion');
+    const label = document.querySelector('label');
+    textarea.addEventListener('focus', function () {
+        label.style.display = 'none';
+   })
+   textarea.addEventListener('blur', function () {
+        label.style.display = 'block';
+   })
+</script>
+</body>
+</html>
